@@ -8866,8 +8866,8 @@ Theme URI: http://www.htmlbeans.com/html/studylms/
     content: "";
     top: 0;
     bottom: auto;
-    left: 0;
-    right: auto;
+    left: auto;
+    right: -15px;
   }
   
   .fooer-navigation > li:before {

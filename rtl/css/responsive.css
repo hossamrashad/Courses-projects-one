@@ -334,7 +334,7 @@
           color: #34c7dc;
         }
         .main-navigation > li > a, .main-navigation.nav > li > a, .main-navigation.navbar-nav > li > a, .main-navigation.navbar-right > li > a {
-          font-size: 13px;
+          font-size: 20px;
           line-height: 1.15385;
           padding: 0;
           display: inline;

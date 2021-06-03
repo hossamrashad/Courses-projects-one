@@ -1,0 +1,164 @@
+@import "./help/mixin"; // 1
+// page index
+
+body {
+  @include xs-media {
+    //color: #f00;
+    // background-color: aqua;
+    &::before {
+      content: "xs";
+      position: fixed;
+      bottom: 10px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      color: #fff;
+      background-color: #333;
+      font-size: 20px;
+      text-align: center;
+      text-transform: capitalize;
+      border: 2px solid#fafafa;
+      z-index: 2000;
+      line-height: 50px;
+    }
+  }
+
+  @include sm-media {
+    //color: rgb(47, 0, 255);
+    // background-color: rgb(47, 0, 255);
+    &::before {
+      content: "sm";
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      color: #fff;
+      background-color: #333;
+      font-size: 20px;
+      text-align: center;
+      text-transform: capitalize;
+      border: 2px solid#fafafa;
+      z-index: 2000;
+    }
+  }
+  @include md-media {
+    //color: rgb(0, 255, 149);
+    // background-color: rgb(0, 255, 149);
+    &::before {
+      content: "md";
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      color: #fff;
+      background-color: #333;
+      font-size: 20px;
+      line-height: 50px;
+      text-align: center;
+      text-transform: capitalize;
+      border: 2px solid#fafafa;
+      z-index: 2000;
+    }
+  }
+  @include lg-media {
+    //color: rgb(251, 255, 0);
+    // background-color: rgb(251, 255, 0);
+    &::before {
+      content: "lg";
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      width: 50px;
+      height: 50px;
+      color: #fff;
+      background-color: #333;
+      line-height: 50px;
+      font-size: 20px;
+      text-align: center;
+      text-transform: capitalize;
+      border: 2px solid#fafafa;
+      z-index: 2000;
+    }
+  }
+}
+* {
+  text-align: right;
+}
+// header
+
+.page-header-stick {
+  .header-holder {
+    #nav {
+      justify-content: center;
+      @include xs-media {
+        justify-content: flex-end;
+      }
+    }
+    .logo {
+      //   margin-left: auto;
+      a {
+        text-align: center;
+        img {
+          @include scale(2, 2);
+          height: 50px;
+          width: 50px;
+          margin: auto;
+          @include xs-media {
+            @include scale(1, 1);
+          }
+        }
+      }
+    }
+    .navbar {
+      .collapse {
+        margin-top: 10px;
+      }
+    }
+    .navbar-search-form {
+      padding-top: 10px;
+      margin: 0px 9px 0 0px;
+    }
+  }
+}
+
+.slider {
+  direction: ltr !important;
+
+  .intro-block-slide .align-wrap .align {
+    &::after {
+      content: "";
+      clear: both;
+    }
+  }
+  .intro-block-slide .btns-wrap {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 992px) {
+  .features-aside .icn-wrap {
+    margin-left: 20px;
+    width: 43px;
+  }
+}
+.text-right {
+  text-align: right;
+}
+.post-author {
+  direction: rtl;
+  .alignleft {
+    margin-left: 7px;
+  }
+}
+
+.popular-posts-slider .slick-arrow {
+  left: 0;
+}
+
+.popular-posts-slider .slick-arrow {
+  &:not(:first-child) {
+    margin-left: 50px;
+  }
+}

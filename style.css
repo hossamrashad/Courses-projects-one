@@ -285,7 +285,7 @@ Theme URI: http://www.htmlbeans.com/html/studylms/
     display: block;
     width: 12px;
     height: 12px;
-    background: url("chosen-sprite.png") -42px 1px no-repeat;
+    background: url("./images/chosen-sprite.png") -42px 1px no-repeat;
     font-size: 1px;
   }
   
@@ -327,12 +327,12 @@ Theme URI: http://www.htmlbeans.com/html/studylms/
     height: 10px;
   }
   
-  .chosen-container-single .chosen-single div b {
+  /* .chosen-container-single .chosen-single div b {
     display: block;
     width: 100%;
     height: 100%;
-    background: url("chosen-sprite.png") no-repeat 0px 2px;
-  }
+    background: url("./images/chosen-sprite.png") no-repeat 0px 2px;
+  } */
   
   .chosen-container-single .chosen-search {
     position: relative;
@@ -349,7 +349,7 @@ Theme URI: http://www.htmlbeans.com/html/studylms/
     height: auto;
     outline: 0;
     border: 1px solid #aaa;
-    background: url("chosen-sprite.png") no-repeat 100% -20px;
+    background: url("./images/chosen-sprite.png") no-repeat 100% -20px;
     font-size: 1em;
     font-family: sans-serif;
     line-height: normal;
@@ -506,7 +506,7 @@ Theme URI: http://www.htmlbeans.com/html/studylms/
     display: block;
     width: 12px;
     height: 12px;
-    background: url("chosen-sprite.png") -42px 1px no-repeat;
+    background: url("./images/chosen-sprite.png") -42px 1px no-repeat;
     font-size: 1px;
   }
   

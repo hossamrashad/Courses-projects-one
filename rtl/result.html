@@ -8,10 +8,10 @@
     <!-- set the HandheldFriendly -->
     <meta name="HandheldFriendly" content="True" />
     <!-- set the description -->
-    <meta name="description" content=" Courses " />
+    <meta name="description" content="STUDYLMS HTML Template" />
     <!-- set the Keyword -->
-    <meta name="keywords" content="Courses" />
-    <meta name="author" content=" Courses " />
+    <meta name="keywords" content="" />
+    <meta name="author" content="STUDYLMS HTML Template" />
     <!-- Start Favicon -->
     <link rel="shortcut icon" href="images/logo.png" />
     <link
@@ -32,17 +32,23 @@
     <link rel="apple-touch-icon-precomposed" href="images/logo.png" />
     <!-- End Favicon -->
     <!-- set the page title -->
-    <title>Courses Result</title>
+    <title>كورسات النتيجة</title>
 
-    <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="images/mycollection/font/flaticon.css" />
     <!-- include google roboto font cdn link -->
     <link
       href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i"
       rel="stylesheet"
     />
+    <!-- Start fontawesome -->
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="images/mycollection/font/flaticon.css" />
+
+    <!-- End fontawesome -->
+
     <!-- include the site bootstrap stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-rtl.css" />
     <!-- include the site stylesheet -->
     <link rel="stylesheet" href="css/plugins.css" />
     <!-- include the site stylesheet -->
@@ -51,8 +57,15 @@
     <link rel="stylesheet" href="style.css" />
     <!-- include the site responsive stylesheet -->
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/framework.css" />
+
+    <link rel="stylesheet" href="../css/framework-rtl.css" />
     <style>
+      .img-area {
+        width: 100px;
+        height: 100px;
+        margin: 30px auto;
+      }
+
       .completion {
         width: 90%;
         border: 7px solid #999;
@@ -104,16 +117,12 @@
         text-align: center;
         font-weight: bold;
       }
-      .img-area{
-        width: 100px;
-    height: 100px;
-    margin: 30px auto;
-      }
     </style>
   </head>
   <body>
     <!-- main container of all the page elements -->
     <div id="wrapper">
+      <!-- header of the page -->
       <!-- header of the page -->
       <header id="page-header" class="page-header-stick">
         <!-- top bar -->
@@ -126,7 +135,7 @@
                   <li>
                     <a href="tel:+611234567890">
                       <strong class="dt element-block text-capitalize hd-phone"
-                        >Call :</strong
+                        >اتصل :</strong
                       >
                       <strong class="dd element-block hd-phone"
                         >+(61) 123 456 7890</strong
@@ -138,7 +147,7 @@
                           hd-up-phone
                           hidden-sm hidden-md hidden-lg
                         "
-                        ><span class="sr-only">phone</span></i
+                        ><span class="sr-only">هاتف</span></i
                       >
                     </a>
                   </li>
@@ -147,7 +156,7 @@
                       href="mailto:&#069;&#120;&#097;&#109;&#112;&#108;&#101;&#064;&#100;&#111;&#109;&#097;&#105;&#110;&#046;&#099;&#111;&#109;"
                     >
                       <strong class="dt element-block text-capitalize hd-phone"
-                        >Email :</strong
+                        >بريد إلكتروني :</strong
                       >
                       <strong class="dd element-block hd-phone"
                         >&#069;&#120;&#097;&#109;&#112;&#108;&#101;&#064;&#100;&#111;&#109;&#097;&#105;&#110;&#046;&#099;&#111;&#109;</strong
@@ -159,7 +168,7 @@
                           hd-up-phone
                           hidden-sm hidden-md hidden-lg
                         "
-                        ><span class="sr-only">email</span></i
+                        ><span class="sr-only">البريد الإلكتروني</span></i
                       >
                     </a>
                   </li>
@@ -169,13 +178,13 @@
                 <!-- user links -->
                 <ul class="list-unstyled user-links fw-bold font-lato">
                   <li>
-                    <a href="#popup1" class="lightbox">Login</a>
+                    <a href="#popup1" class="lightbox">تسجيل الدخول</a>
                     <span class="sep">|</span>
-                    <a href="#popup2" class="lightbox">Register</a>
+                    <a href="#popup2" class="lightbox">تسجيل</a>
                     <span class="sep">|</span>
                   </li>
                   <li>
-                    <a href="rtl/index.html" class="">language</a>
+                    <a href="../index.html" class="">اللغة EN </a>
                   </li>
                 </ul>
               </div>
@@ -235,12 +244,12 @@
                         font-lato
                       "
                     >
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="courses-list.html">courses</a></li>
-                      <li><a href="events-list.html">events</a></li>
-                      <li><a href="blog.html">blog</a></li>
-                      <li><a href="shop.html">Shop List</a></li>
-                      <li><a href="contact.html">coNTACT</a></li>
+                      <li><a href="index.html">الصفحة الرئيسية</a></li>
+                      <li><a href="courses-list.html">الدورات</a></li>
+                      <li><a href="events-list.html">الأحداث</a></li>
+                      <li><a href="blog.html">مقالات</a></li>
+                      <li><a href="shop.html">قائمة التسوق</a></li>
+                      <li><a href="contact.html">اتصل</a></li>
                     </ul>
                   </div>
                   <!-- navbar form -->
@@ -266,7 +275,7 @@
                           placeholder="Search &hellip;"
                         />
                         <button type="button" class="fas fa-search btn">
-                          <span class="sr-only">search</span>
+                          <span class="sr-only">بحث</span>
                         </button>
                       </div>
                     </div>
@@ -292,7 +301,7 @@
         >
           <div class="container holder">
             <div class="align">
-              <h1>result</h1>
+              <h1>نتيجة</h1>
             </div>
           </div>
         </header>
@@ -301,8 +310,8 @@
           <div class="container">
             <!-- breadcrumb -->
             <ol class="breadcrumb">
-              <li><a href="home.html">Home</a></li>
-              <li class="active">Result</li>
+              <li><a href="home.html">الصفحة الرئيسية</a></li>
+              <li class="active">نتيجة</li>
             </ol>
           </div>
         </nav>
@@ -310,19 +319,19 @@
         <section class="contact-block">
           <div class="container">
             <header class="seperator-head text-center">
-              <h2>result Details</h2>
-              <p>Welcome to our Website. We are glad to have you around.</p>
+              <h2>تفاصيل النتيجة</h2>
+              <p>مرحبا فى موقعنا. نحن سعداء بوجودك معنا</p>
             </header>
             <!-- contact form -->
             <form action="#" class="contact-form">
-              <h3 class="text-center">Your code number</h3>
+              <h3 class="text-center">رقم الكود الخاص بك</h3>
               <div class="row">
                 <div class="col-xs-12 col-sm-6">
                   <div class="form-group">
                     <input
                       type="text"
                       class="form-control element-block"
-                      placeholder="Your code number"
+                      placeholder="رقم الكود الخاص بك"
                     />
                   </div>
                 </div>
@@ -337,33 +346,33 @@
                         fw-bold
                       "
                     >
-                      search
+                      بحث
                     </button>
                   </div>
                 </div>
               </div>
             </form>
             <hr class="sep-or element-block" data-text="or" />
-            <div class="img-area ">
+            <div class="img-area">
               <img
                 src="images/logo.png"
                 alt=""
                 class="img-responsive img-circle img"
               />
             </div>
-            
+
             <div class="completion">
               <div class="completion-child">
-                <h3 class="h2 titel">certificate of completion</h3>
-                <p class="lead p-bottom-titel">this is to certify that</p>
-                <h4 class="h3 second-titel">graham bell</h4>
-                <p class="lead p-second-titel">has completed the course</p>
-                <p class="lead p-sales">sales training</p>
+                <h3 class="h2 titel">شهادة إتمام</h3>
+                <p class="lead p-bottom-titel">هذا لتاكيد </p>
+                <h4 class="h3 second-titel">جراهام بيل</h4>
+                <p class="lead p-second-titel">أكملت الدورة</p>
+                <p class="lead p-sales">تدريب المبيعات</p>
                 <p class="lead p-score">
-                  with score of <span class="span-score"> 76.5%</span>
+                  مع درجة <span class="span-score"> 76.5%</span>
                 </p>
-                <p class="lead p-dated">dated</p>
-                <p class="lead p-day">january 22. 2021</p>
+                <p class="lead p-dated">بتاريخ</p>
+                <p class="lead p-day">يناير 22. 2021</p>
               </div>
             </div>
             <br /><br /><br /><br /><br />
